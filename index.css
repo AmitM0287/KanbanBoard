@@ -1,0 +1,104 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+h4 {
+    margin: 0;
+}
+.main-container {
+    display: flex;
+}
+.board {
+    margin-right: 8px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    border-radius: 6px;
+    background-color: rgb(246, 248, 250);
+    transition: transform 75ms ease 0s;
+    border: 1px solid rgb(216, 222, 228);
+}
+.heading {
+    margin-bottom: 8px;
+}
+.heading > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 16px 4px 16px;
+    max-width: 350px;
+}
+.sub-heading {
+    padding: 8px 16px 4px 16px;
+    margin-top: 4px;
+    color: rgb(101, 109, 118);
+    font-size: 14px;
+}
+.circle {
+    background-color: rgb(218, 251, 225);
+    border-color: rgb(31, 136, 61);
+    border-width: 2px;
+    border-style: solid;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+.content {
+    padding: 4px 8px;
+}
+.content .item div > span {
+    font-size: 12px;
+    color: rgb(101, 109, 118);
+}
+.content .item div {
+    margin-bottom: 4px;
+}
+.content .item > span {
+    color: rgb(31, 35, 40);
+    font-size: 14px;
+}
+.dashed-circle {
+    color: rgb(101, 109, 118);
+}
+.content .item {
+    border-radius: 6px;
+    border-color: rgb(216, 222, 228);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px;
+    height: unset;
+    flex-direction: column;
+    margin-bottom: 8px;
+    overflow: visible;
+    padding: 8px 12px 12px 12px;
+}
+.add-item {
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    background-color: rgb(246, 248, 250);
+    color: rgb(101, 109, 118);
+}
+.add-board {
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    color: rgb(101, 109, 118);
+    background-color: rgb(246, 248, 250);
+    box-shadow: rgba(31, 35, 40, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(31,35,40,0.15);
+    padding: 0px 10px;
+}
